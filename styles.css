@@ -1,0 +1,30 @@
+:root {
+    --color-text: #1d1d1d;
+    --color-accent: rgb(193, 84, 12);
+    --color-background: #f1e8e8dc;
+    --color-secondary: #fbd08f;
+    --basic-sizing: 1rem;
+    --medium-sizing: 1.5rem;
+}
+
+body {
+    font-family: "helvetica", "arial", sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.5;
+    margin: 0.5rem;
+}
+header {
+    color: var(--color-accent);
+    background-color: var(--color-secondary);
+    text-align: center;
+    font-weight: bold;
+    padding: var(--medium-sizing);
+    font-size: var(--medium-sizing);
+}
+
+.card, .radio-card, .newsletter-card, .callout-card {
+    margin: var(--basic-sizing);
+    border: 1px solid var(--color-accent);
+    padding: var(--basic-sizing);
+}
