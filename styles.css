@@ -1,20 +1,34 @@
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('LEMONMILK-Regular.woff2') format('woff2'),
+        url('LEMONMILK-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
-    --color-text: #1d1d1d;
+    --color-text: #383737;
     --color-accent: rgb(193, 84, 12);
     --color-background: #f1e8e8dc;
     --color-secondary: #fbd08f;
+    --color-card-background: #fcdeb9;
+    --small-sizing: 0.5rem;
     --basic-sizing: 1rem;
     --medium-sizing: 1.5rem;
+    --heading-font: 'LEMON MILK', 'helvetica', 'arial', sans-serif;
+    --text-font: 'helvetica', 'arial', sans-serif;
 }
 
 body {
-    font-family: "helvetica", "arial", sans-serif;
+    font-family: var(--text-font);
     color: var(--color-text);
     background-color: var(--color-background);
     line-height: 1.5;
-    margin: 0.5rem;
+    margin: var(--small-sizing);
 }
 header {
+    font-family: var(--heading-font);
     color: var(--color-accent);
     background-color: var(--color-secondary);
     text-align: center;
@@ -22,9 +36,40 @@ header {
     padding: var(--medium-sizing);
     font-size: var(--medium-sizing);
 }
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
 
 .card, .radio-card, .newsletter-card, .callout-card {
     margin: var(--basic-sizing);
-    border: 1px solid var(--color-accent);
+    border: 2px solid var(--color-accent);
     padding: var(--basic-sizing);
 }
+
+.callout-card {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+.card, .radio-card, .newsletter-card {
+    background-color: var(--color-card-background);
+}
+
+button, a {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    padding: var(--small-sizing);
+    font-family: var(--heading-font);
+    font-weight: 200;
+    margin: var(--small-sizing);
+}
+
+button:hover, a:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    padding: var(--basic-sizing);
+    margin: var(--small-sizing);
+}
+ 
+
