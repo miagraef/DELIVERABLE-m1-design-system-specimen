@@ -27,6 +27,7 @@ body {
     line-height: 1.5;
     margin: var(--small-sizing);
 }
+
 header {
     font-family: var(--heading-font);
     color: var(--color-accent);
@@ -40,19 +41,12 @@ h1, h2, h3 {
     font-family: var(--heading-font);
 }
 
-.card, .radio-card, .newsletter-card, .callout-card {
+.card, .radio-card, .newsletter-card, .card-alt {
     margin: var(--basic-sizing);
     border: 2px solid var(--color-accent);
     padding: var(--basic-sizing);
-}
-
-.callout-card {
-    background-color: var(--color-accent);
-    color: var(--color-background);
-}
-
-.card, .radio-card, .newsletter-card {
     background-color: var(--color-card-background);
+    color: var(--color-text);
 }
 
 button, a {
@@ -71,5 +65,12 @@ button:hover, a:hover {
     padding: var(--basic-sizing);
     margin: var(--small-sizing);
 }
- 
 
+
+
+/*alt theme callout card*/ 
+
+.card-alt {
+    --color-card-background: var(--color-accent);
+    --color-text: var(--color-background);
+}

@@ -12,7 +12,7 @@
     </header>
 
     <main>
-        <section class="callout-card">
+        <section class="card-alt">
             <h2>Fall classes now enrolling!</h2>
             <h3>Session 5 Classes • August 24 - October 18</h3>
                 <p> 
@@ -34,13 +34,13 @@
             <h2>Explore our programs</h2>
 
             <div>
-            <input type="radio" id="adult programs" name="programs" checked>
-            <label for="adult programs">Adult Programs</label>
+            <input type="radio" id="adult-programs" name="programs" checked>
+            <label for="adult-programs">Adult Programs</label>
             </div>
 
             <div>
-            <input type="radio" id="youth programs" name="programs">
-            <label for="youth programs">Youth Programs</label>
+            <input type="radio" id="youth-programs" name="programs">
+            <label for="youth-programs">Youth Programs</label>
             </div>
 
             <div>
@@ -53,8 +53,8 @@
         <section class="card">
             <h3>Follow Us on Social Media!</h3>
             
-                <a href="#" class="instagram" label="Instagram">Instagram</a>
-                <a href="#" class="facebook" label="Facebook">Facebook</a>
+                <a href="#" class="instagram" aria-label="Instagram">Instagram</a>
+                <a href="#" class="facebook" aria-label="Facebook">Facebook</a>
             
         </section>
 
@@ -77,8 +77,10 @@
             </label>
 
         </section>
-        <section class="donate-button">
-            <button>donate</button>
+
+        <section class="card" aria-labelledby="donate-heading">
+            <h2 id="donate-heading">Support our mission</h2>
+            <button type="button">Donate</button>
         </section>
 
     </main>
